@@ -1,0 +1,222 @@
+* {
+  font-family: "Platypi", serif;
+  margin: 0;
+  padding: 0;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+* #seriText {
+  font-size: 16px;
+  color: #505050;
+}
+* #devMile {
+  font-size: 18px;
+  color: #2F2F2F;
+}
+
+body {
+  background-color: #F9F9F7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 100%;
+}
+header .withVideo {
+  width: 100vw;
+  max-width: 100%;
+  height: 85vh;
+}
+header .withVideo video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .withNav {
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-repeat: round;
+  background-image: url("../MainPage/imgs/bg_footer 2.png");
+}
+header nav {
+  display: flex;
+  width: 88vw;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav div {
+  display: flex;
+  width: auto;
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+}
+header nav ul {
+  display: flex;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: #3C3C3C;
+}
+header nav ul li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul:nth-child(1) {
+    display: none;
+  }
+}
+.weaponsAll {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  background-image: url("imgs/Rectangle 89.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.weaponsAll .withButton button {
+  cursor: pointer;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  width: auto;
+  transition: 0.5s;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 27px;
+  color: #2A2A2A;
+  background-color: #FFFCF8;
+  border: #2A2A2A 1px solid;
+}
+.weaponsAll .withButton button:hover {
+  background-color: #F9EBFC;
+}
+.weaponsAll .holderWeapons {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.weaponsAll .holderWeapons .containerWeapons:nth-child(1) .cardWeapons:nth-child(1) {
+  background-image: url("imgs/Group 117.png");
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+.weaponsAll .holderWeapons .containerWeapons:nth-child(1) .cardWeapons:nth-child(1):hover {
+  background-size: 110%;
+}
+.weaponsAll .holderWeapons .containerWeapons:nth-child(1) .cardWeapons:nth-child(2) {
+  background-image: url("imgs/Group 117 (1).png");
+}
+.weaponsAll .holderWeapons .containerWeapons:nth-child(2) .cardWeapons:nth-child(1) {
+  background-image: url("imgs/Group 1171.png");
+}
+.weaponsAll .holderWeapons .containerWeapons:nth-child(2) .cardWeapons:nth-child(2) {
+  background-image: url("imgs/Group 1172.png");
+}
+.weaponsAll .holderWeapons .containerWeapons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.weaponsAll .holderWeapons .containerWeapons .cardWeapons {
+  border: 1px solid #2A2A2A;
+  transition: 0.5s;
+  background-position: center;
+  background-image: url("imgs/Group 117.png");
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+.weaponsAll .holderWeapons .containerWeapons .cardWeapons:hover {
+  background-size: 110%;
+}
+.weaponsAll .holderWeapons .containerWeapons .cardWeapons img {
+  width: 100%;
+  opacity: 0;
+}
+.weaponsAll .menuVibor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.weaponsAll .menuVibor a:nth-child(1) .vibor:nth-child(1) {
+  background-color: #F9EBFC;
+}
+.weaponsAll .menuVibor a {
+  color: #333333;
+}
+.weaponsAll .menuVibor .vibor {
+  border: 1px solid #2A2A2A;
+  padding: 1rem;
+  display: flex;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F9F9F7;
+}
+.weaponsAll .withNazv {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 88vw;
+  border-bottom: #A8A8A8 solid 2px;
+}
+.weaponsAll .withNazv p {
+  font-size: 57px;
+  text-align: center;
+  color: #2A2A2A;
+}
+.weaponsAll .weapons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 3rem;
+  width: 88vw;
+}
+
+@media screen and (max-width: 768px) {
+  .weaponsAll .holderWeapons .containerWeapons {
+    flex-direction: column;
+  }
+  .weaponsAll .menuVibor .vibor {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .weaponsAll .menuVibor .vibor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
