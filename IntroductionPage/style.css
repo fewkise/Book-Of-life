@@ -1,0 +1,530 @@
+* {
+  font-family: "Platypi", serif;
+  margin: 0;
+  padding: 0;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+* #seriText {
+  font-size: 16px;
+  color: #505050;
+}
+* #devMile {
+  font-size: 18px;
+  color: #2F2F2F;
+}
+
+body {
+  background-color: #F9F9F7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 100%;
+}
+header .withVideo {
+  width: 100vw;
+  max-width: 100%;
+  height: 85vh;
+}
+header .withVideo video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .withNav {
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-repeat: round;
+  background-image: url("../MainPage/imgs/bg_footer 2.png");
+}
+header nav {
+  display: flex;
+  width: 88vw;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav div {
+  display: flex;
+  width: auto;
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+}
+header nav ul {
+  display: flex;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: #3C3C3C;
+}
+header nav ul li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul:nth-child(1) {
+    display: none;
+  }
+}
+.aboutUsAll {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.aboutUsAll #storyName {
+  color: #575757;
+  font-size: 35px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .aboutUsAll {
+    padding-bottom: 13rem;
+  }
+}
+.aboutUsAll .withNazv {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 88vw;
+  border-bottom: #A8A8A8 solid 2px;
+}
+.aboutUsAll .withNazv p {
+  font-size: 57px;
+  text-align: center;
+  color: #2A2A2A;
+}
+@media screen and (max-width: 395px) {
+  .aboutUsAll .withNazv p {
+    font-size: 35px;
+  }
+}
+.aboutUsAll .textContainerOnlyText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .aboutUsAll .textContainerOnlyText {
+    flex-direction: column;
+  }
+}
+.aboutUsAll .withImgAboutus {
+  padding-top: 4rem;
+}
+.aboutUsAll .withImgAboutus img {
+  width: 100%;
+  height: auto;
+  min-width: 402px;
+  overflow: hidden;
+}
+@media screen and (max-width: 465px) {
+  .aboutUsAll .withImgAboutus img {
+    width: 100%;
+    height: 370px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+    min-width: unset;
+  }
+}
+.aboutUsAll .nomention {
+  display: none;
+}
+.aboutUsAll .nomention img {
+  width: 150px;
+}
+@media screen and (max-width: 395px) {
+  .aboutUsAll .nomention img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutUsAll .nomention {
+    display: block;
+  }
+}
+.aboutUsAll .withImgAU {
+  position: absolute;
+  top: 500px;
+  right: 100px;
+  padding-top: 44px;
+}
+@media screen and (max-width: 1200px) {
+  .aboutUsAll .withImgAU {
+    top: 550px;
+    right: 200px;
+    display: none;
+  }
+}
+.aboutUsAll .aboutUs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 88vw;
+  flex-direction: column;
+}
+.aboutUsAll .aboutUs .textContainerAll {
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
+  justify-content: space-between;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 1886px) {
+  .aboutUsAll .aboutUs .textContainerAll {
+    width: 100%;
+  }
+}
+.aboutUsAll .aboutUs .textContainerAll .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 48%;
+  row-gap: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .aboutUsAll .aboutUs .textContainerAll .textContainer {
+    width: 100%;
+  }
+}
+.aboutUsAll .aboutUs .textContainerAll .textContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 0.5rem;
+}
+.aboutUsAll .aboutUs .textContainerAll .textContainer ul #averageText {
+  color: #505050;
+}
+.aboutUsAll .aboutUs .textContainerAll .textContainer ul #bookOflifeNazv {
+  font-size: 48px;
+  letter-spacing: 10px;
+  font-weight: lighter;
+}
+@media screen and (max-width: 465px) {
+  .aboutUsAll .aboutUs .textContainerAll .textContainer ul #bookOflifeNazv {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .container .aboutUsAll:nth-child(2) .withImgAboutus img {
+    min-width: inset;
+    width: 100%;
+    height: 100%;
+  }
+}
+.container .aboutUsAll:nth-child(2) .aboutUs {
+  align-items: flex-end;
+}
+.container .aboutUsAll:nth-child(2) .nomention {
+  display: none;
+}
+.container .aboutUsAll:nth-child(2) .nomention img {
+  width: 150px;
+}
+@media screen and (max-width: 395px) {
+  .container .aboutUsAll:nth-child(2) .nomention img {
+    width: 92px;
+  }
+}
+@media screen and (max-width: 1670px) {
+  .container .aboutUsAll:nth-child(2) .nomention {
+    display: block;
+  }
+}
+.container .aboutUsAll:nth-child(2) .withImgAU {
+  left: 100px;
+  top: 200px;
+  width: 250px;
+}
+@media screen and (max-width: 1670px) {
+  .container .aboutUsAll:nth-child(2) .withImgAU {
+    display: none;
+  }
+}
+.container .aboutUsAll:nth-child(2) .textContainerAll {
+  width: 1190px;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1367px) {
+  .container .aboutUsAll:nth-child(2) .textContainerAll {
+    width: 100%;
+  }
+}
+.container .aboutUsAll:nth-child(2) .textContainerAll .textContainer {
+  width: 45%;
+}
+@media screen and (max-width: 1000px) {
+  .container .aboutUsAll:nth-child(2) .textContainerAll .textContainer {
+    width: 100%;
+  }
+}
+
+.creatorsAll {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  background-image: url("imgs/Rectangle 90.png");
+  background-size: 100% 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 863px) {
+  .creatorsAll .forErogliph {
+    display: none;
+  }
+}
+.creatorsAll .creators {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 88vw;
+  height: auto;
+  row-gap: 2rem;
+}
+.creatorsAll .creators .noadaptiveText {
+  width: 60%;
+}
+@media screen and (max-width: 863px) {
+  .creatorsAll .creators .noadaptiveText {
+    display: none;
+  }
+}
+.creatorsAll .creators .noadaptiveText #devMile {
+  font-size: 18px;
+  color: #2F2F2F;
+}
+.creatorsAll .creators .noadaptiveText #seriText {
+  font-size: 16px;
+  color: #505050;
+}
+@media screen and (max-width: 1569px) {
+  .creatorsAll .creators .noadaptiveText {
+    width: 100%;
+  }
+}
+.creatorsAll .creators .textAndPhotos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: auto;
+  row-gap: 5rem;
+}
+.creatorsAll .creators .textAndPhotos .photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  -moz-column-gap: 12rem;
+       column-gap: 12rem;
+}
+@media screen and (max-width: 1154px) {
+  .creatorsAll .creators .textAndPhotos .photos {
+    flex-direction: column;
+    height: auto;
+    row-gap: 4rem;
+  }
+}
+.creatorsAll .creators .textAndPhotos .photos .creatorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 1rem;
+}
+.creatorsAll .creators .textAndPhotos .photos .creatorCard #japanName {
+  font-size: 26px;
+  font-weight: 100;
+  color: #505050;
+}
+.creatorsAll .creators .textAndPhotos .photos .creatorCard #englishName {
+  font-size: 35px;
+  font-weight: lighter;
+  color: #2F2F2F;
+}
+.creatorsAll .creators .textAndPhotos .photos .creatorCard button {
+  cursor: pointer;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  width: auto;
+  transition: 0.5s;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 27px;
+  color: #2A2A2A;
+  background-color: #FFFCF8;
+  border: #2A2A2A 1px solid;
+}
+.creatorsAll .creators .textAndPhotos .photos .creatorCard button:hover {
+  background-color: #F9EBFC;
+}
+.creatorsAll .creators .textAndPhotos .photos .adaptiveText {
+  display: none;
+  flex-direction: row;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  align-items: center;
+}
+.creatorsAll .creators .textAndPhotos .photos .adaptiveText .onlyAdaptiveText {
+  display: flex;
+  height: 50%;
+  row-gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media screen and (max-width: 863px) {
+  .creatorsAll .creators .textAndPhotos .photos .adaptiveText {
+    display: flex;
+  }
+}
+
+.flowerTextAll {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.flowerTextAll .flowerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 3rem;
+  text-align: center;
+  width: 88vw;
+  flex-direction: column;
+}
+.flowerTextAll .flowerText p {
+  width: 65%;
+  color: #505050;
+  font-size: 16px;
+}
+@media screen and (max-width: 550px) {
+  .flowerTextAll .flowerText p {
+    width: 100%;
+  }
+}
+
+.charAndOthersAll {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  flex-direction: column;
+}
+.charAndOthersAll .mapsAndHeroes:nth-child(1) .cardPunch:nth-child(1) {
+  background-image: url("imgs/Screenshot_2377 3.png");
+}
+.charAndOthersAll .mapsAndHeroes:nth-child(1) .cardPunch:nth-child(2) {
+  background-image: url("imgs/Screenshot_2377 3.png");
+}
+.charAndOthersAll .mapsAndHeroes:nth-child(2) .cardPunch:nth-child(1) {
+  background-image: url("imgs/img-weapons-add-on-m416 2.png");
+}
+.charAndOthersAll .mapsAndHeroes:nth-child(2) .cardPunch:nth-child(2) {
+  background-image: url("imgs/mobilesuit_03_front1 2.png");
+}
+.charAndOthersAll .mapsAndHeroes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #F9EBFC;
+  box-shadow: 2px 8px 47px 55px rgba(0, 0, 17, 0.38) inset;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch {
+  border: 1px solid #2A2A2A;
+  width: 50%;
+  position: relative;
+  background-image: url("imgs/character_taiki 3.png");
+  background-repeat: no-repeat;
+  background-size: 101%;
+  transition: 0.5s;
+  background-position: center;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch img {
+  opacity: 0;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch p {
+  position: absolute;
+  bottom: 2%;
+  padding: 1rem;
+  font-size: 2vw;
+  color: #F8F8F8;
+  background: transparent;
+  transition: 0.7s;
+  background-size: 0px;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch img {
+  width: 100%;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch:hover {
+  background-size: 110%;
+}
+.charAndOthersAll .mapsAndHeroes .cardPunch:hover p {
+  background: #F9EBFC;
+  color: #505050;
+  background-size: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .mapsAndHeroes {
+    flex-direction: column;
+  }
+  .charAndOthersAll .mapsAndHeroes .cardPunch {
+    width: 100%;
+    background-size: 102%;
+  }
+  .charAndOthersAll .mapsAndHeroes .cardPunch p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
